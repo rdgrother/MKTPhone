@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="126dp"
+                android:layout_margin="12dp"
+                android:background="@color/txtbtn"
+                android:contentDescription="@string/imgMphone"
+                app:srcCompat="@drawable/mktphoneview" />
+
+            <TextView
+                android:id="@+id/txtVenda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:fontFamily="@font/michroma"
+                android:text="@string/anuncie_aqui_seu_smartphone"
+                android:textAlignment="center"
+                android:textColor="@color/titulo"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtTitulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="12dp"
+                    android:background="@android:color/white"
+                    android:fontFamily="@font/michroma"
+                    android:gravity="center"
+                    android:hint="@string/titulo_anuncio"
+                    android:inputType="text"
+                    android:textColor="@color/txtbtn"
+                    android:textColorLink="@color/txtbtn"
+                    android:textSize="18sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RadioGroup
+                android:id="@+id/ragrupCond"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="12dp">
+
+                <TextView
+                    android:id="@+id/txtCond"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/michroma"
+                    android:text="@string/cond_aparelho"
+                    android:textAlignment="center"
+                    android:textColor="@color/hint"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rbNovo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/titulo"
+                    android:fontFamily="@font/michroma"
+                    android:text="@string/novo"
+                    android:textColor="@color/txtbtn"
+                    android:textColorLink="@color/titulo"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rbUsado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/titulo"
+                    android:fontFamily="@font/michroma"
+                    android:text="@string/usado"
+                    android:textColor="@color/txtbtn"
+                    android:textColorLink="@color/titulo"
+                    android:textStyle="bold" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/edtDescri"
+                android:layout_width="match_parent"
+                android:layout_height="129dp"
+                android:layout_margin="12dp"
+                android:autofillHints=""
+                android:background="@android:color/white"
+                android:ems="10"
+                android:fontFamily="@font/michroma"
+                android:gravity="start|top"
+                android:hint="@string/desc_do_aparelho"
+                android:inputType="textMultiLine"
+                android:textColor="@color/txtbtn"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtAcess"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:fontFamily="@font/michroma"
+                android:text="@string/acessorios"
+                android:textAlignment="center"
+                android:textColor="@color/hint"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="12dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/ckFone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/titulo"
+                        android:fontFamily="@font/michroma"
+                        android:text="@string/fone"
+                        android:textColor="@color/txtbtn"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <CheckBox
+                        android:id="@+id/ckCarregador"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/titulo"
+                        android:fontFamily="@font/michroma"
+                        android:text="@string/carregador"
+                        android:textColor="@color/txtbtn"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <CheckBox
+                        android:id="@+id/ckBateria"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/titulo"
+                        android:fontFamily="@font/michroma"
+                        android:text="@string/bateria_extra"
+                        android:textColor="@color/txtbtn"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/ckPelicula"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/titulo"
+                        android:fontFamily="@font/michroma"
+                        android:text="@string/pelicula"
+                        android:textColor="@color/txtbtn"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <CheckBox
+                        android:id="@+id/ckCabos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/titulo"
+                        android:fontFamily="@font/michroma"
+                        android:text="@string/cabos"
+                        android:textColor="@color/txtbtn"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <CheckBox
+                        android:id="@+id/ckCapa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/titulo"
+                        android:fontFamily="@font/michroma"
+                        android:text="@string/capa"
+                        android:textColor="@color/txtbtn"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <EditText
+                android:id="@+id/edtValor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:autofillHints=""
+                android:background="@android:color/white"
+                android:ems="10"
+                android:fontFamily="@font/michroma"
+                android:hint="@string/valor"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"
+                android:textColor="@color/txtbtn"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnImg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@color/hint"
+                android:fontFamily="@font/michroma"
+                android:text="@string/carregar_imagens"
+                android:textColor="@color/txtbtn"
+                android:onClick="carregarImagens"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgUP1"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_margin="20dp"
+                android:contentDescription="imgProv1"
+                app:srcCompat="@android:drawable/ic_menu_camera" />
+
+            <ImageView
+                android:id="@+id/imgUP2"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_margin="20dp"
+                android:contentDescription="imgProv2"
+                app:srcCompat="@android:drawable/ic_menu_camera" />
+
+            <Button
+                android:id="@+id/btnSalvarAn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@color/hint"
+                android:fontFamily="@font/michroma"
+                android:text="@string/salvar_anun"
+                android:textColor="@color/txtbtn"
+                android:onClick="salvarAnuncio"
+                android:textStyle="bold"
+                tools:ignore="OnClick" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

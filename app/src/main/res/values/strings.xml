@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Market Phone</string>
+    <string name="imgMphone">imgMphone</string>
+    <string name="senha">Senha</string>
+    <string name="entrar">Entrar</string>
+    <string name="e_mail">E-mail</string>
+    <string name="o_app_de_compra_e_venda_de_smartphones">O app de compra e venda de Smartphones</string>
+    <string name="anuncie_aqui_seu_smartphone">Anuncie aqui seu Smartphone</string>
+    <string name="desc_do_aparelho">Descrição do aparelho</string>
+    <string name="usado">Usado</string>
+    <string name="novo">Novo</string>
+    <string name="cond_aparelho">Qual condição do aparelho?</string>
+    <string name="titulo_anuncio">Titulo do anúncio</string>
+    <string name="acessorios">Acessórios</string>
+    <string name="fone">Fone</string>
+    <string name="carregador">Carregador</string>
+    <string name="bateria_extra">Bateria Extra</string>
+    <string name="pelicula">Pelicula</string>
+    <string name="cabos">Cabos</string>
+    <string name="capa">Capa</string>
+    <string name="valor">Valor R$</string>
+    <string name="carregar_imagens">Carregar Imagens</string>
+    <string name="cadastre">Cadastre-se</string>
+    <string name="nome">Nome</string>
+    <string name="cadastre_se_aqui">Cadastre-se aqui</string>
+    <string name="telefone">Telefone</string>
+    <string name="endereco">Endereço</string>
+    <string name="repita_sua_senha">Repita sua senha</string>
+    <string name="salvar">Salvar</string>
+    <string name="cep">CEP</string>
+    <string name="salvar_anun">Salvar Anúncio</string>
+    <string name="preencha_campos">Preencha todos os campos</string>
+
+</resources>
